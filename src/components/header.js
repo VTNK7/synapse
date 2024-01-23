@@ -34,7 +34,7 @@ export default function Header() {
         <Link href="/" >
           <div className="flex items-center justify-between">
             <div className="mr-3">
-              Synapse
+              Synapse test
             </div>
           </div>
         </Link>
