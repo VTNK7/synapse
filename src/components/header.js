@@ -27,13 +27,14 @@ const links = [
 
 export default function Header() {
   const pathname = usePathname();
+  console.log(pathname)
 
   return (
-    <header className="flex items-center justify-between py-8 px-8 ">
+    <header className="flex items-center justify-between px-8 py-8 ">
       <div>
         <Link href="/" >
           <div className="flex items-center justify-between">
-            <div className="mr-3">
+            <div className="mr-3 text-primary">
               Synapse
             </div>
           </div>
@@ -45,9 +46,9 @@ export default function Header() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'hidden font-medium text-gray-900 dark:text-gray-100 sm:block hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+              'hidden sm:block font-medium hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
               {
-                'bg-sky-100 text-blue-600': pathname === link.href,
+                'text-blue-600': pathname === link.href,
               },
             )}
           >

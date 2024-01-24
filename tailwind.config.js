@@ -10,6 +10,11 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#3490dc', // Exemple de couleur primaire
+        secondary: '#ffed4a', // Exemple de couleur secondaire
+        accent: '#f9ac00', // Exemple de couleur d'accent
+      },
       height: {
         '1/5': '20%',
         '2/5': '40%',
